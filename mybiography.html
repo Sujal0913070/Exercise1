@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Biography</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #555;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+    /* Table styles */
+    #bio-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    #bio-table th, #bio-table td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    #bio-table th {
+      background-color: #f2f2f2;
+    }
+    /* Form styles */
+    #bio-form {
+      text-align: center;
+    }
+    #bio-form h2 {
+      margin-bottom: 20px;
+      color: #555;
+    }
+    #bio-form label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    #bio-form input[type="text"], #bio-form textarea {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    #bio-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #bio-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    /* Image styles */
+    #bio-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      #bio-form input[type="text"], #bio-form textarea {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>My Biography</h1>
+
+    <table id="bio-table">
+      <tr>
+        <th>Attribute</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Sujal Shrestha</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>Toronto, Canada</td>
+      </tr>
+    </table>
+
+    <div id="bio-description">
+      <h2>About Me</h2>
+      <p>
+         Hey everyone! I am Sujal Shrestha. This is my website. I am 19 years old guy born on 2004-02-19. I am from Nepal but my present address is Toronto, Canada. I have completed my +2 from Arniko College, Nepal in Computer Science major. I recently came to Canada on August 10 for my diploma study. I am enrolled in Lambton College of Toronto where I am studying Diploma in Computer Programming. My aim is to become Software Developer in future. Thankyou.
+      </p>
+    </div>
+
+    <form id="bio-form">
+      <h2>Contact Me</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+<br> <br>
+    <img id="My image" src="myphoto.jpg" height="350" width="300" alt="This is me">
+
+  </div>
+
+</body>
+</html>
